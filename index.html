@@ -225,6 +225,16 @@
   .proj-stack{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin:0 0 12px;}
   .proj-card ul{margin:0 0 0;padding-left:18px;flex-grow:1;}
   .proj-card li{font-size:14px;margin-bottom:6px;}
+  .proj-links{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+  .proj-links a{
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:600;
+    padding:7px 12px;border-radius:7px;border:2px solid var(--line);
+    text-decoration:none;box-shadow:2px 2px 0 var(--ink);
+    transition:transform .12s, box-shadow .12s;
+  }
+  .proj-links a:hover{transform:translate(-2px,-2px); box-shadow:4px 4px 0 var(--ink);}
+  .proj-links a.demo{background:var(--lime);color:var(--ink);}
+  .proj-links a.repo{background:var(--card);color:var(--ink);}
 
   /* ---------- achievements ---------- */
   .ach-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
@@ -431,6 +441,10 @@
           <li>AI-powered platform that analyzes skill gaps, generates personalized learning roadmaps, and recommends certifications based on career goals.</li>
           <li>Built an ATS resume analyzer with keyword-based scoring, missing-skill detection, and LLM-driven improvement suggestions.</li>
         </ul>
+        <div class="proj-links">
+          <a class="demo" href="#" target="_blank" rel="noopener">▶ Live Demo</a>
+          <a class="repo" href="#" target="_blank" rel="noopener">⌥ GitHub</a>
+        </div>
       </div>
       <div class="proj-card">
         <div class="proj-top">
@@ -444,6 +458,44 @@
           <li>Analyzes GitHub repos or ZIP uploads to auto-generate project summaries, tech stacks, key features, architecture diagrams (Mermaid.js), and interview questions.</li>
           <li>Context-aware chatbot answering follow-up questions using repo context and chat history, with RESTful APIs and persistent storage via FastAPI + SQLAlchemy.</li>
         </ul>
+        <div class="proj-links">
+          <a class="demo" href="#" target="_blank" rel="noopener">▶ Live Demo</a>
+          <a class="repo" href="#" target="_blank" rel="noopener">⌥ GitHub</a>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top">
+          <div>
+            <h3 class="proj-name">Sentiment Analysis</h3>
+          </div>
+          <span class="proj-icon">ML · INTERN</span>
+        </div>
+        <p class="proj-stack">Python · scikit-learn · Pandas · NLTK · Jupyter Notebook</p>
+        <ul>
+          <li>Built during the Codtech IT Solutions ML internship — classifies text sentiment (positive/negative/neutral) using NLP preprocessing and a trained classification model.</li>
+          <li>Covered data cleaning, feature extraction, model training, and evaluation on labeled text data.</li>
+        </ul>
+        <div class="proj-links">
+          <a class="demo" href="#" target="_blank" rel="noopener">▶ Live Demo</a>
+          <a class="repo" href="#" target="_blank" rel="noopener">⌥ GitHub</a>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top">
+          <div>
+            <h3 class="proj-name">Jarvis</h3>
+          </div>
+          <span class="proj-icon">ML · INTERN</span>
+        </div>
+        <p class="proj-stack">Python · SpeechRecognition · pyttsx3</p>
+        <ul>
+          <li>Built during the Codtech IT Solutions ML internship — a voice-controlled assistant that responds to speech commands using speech-to-text and text-to-speech.</li>
+          <li>Handled tasks like answering queries and executing simple voice-triggered commands.</li>
+        </ul>
+        <div class="proj-links">
+          <a class="demo" href="#" target="_blank" rel="noopener">▶ Live Demo</a>
+          <a class="repo" href="#" target="_blank" rel="noopener">⌥ GitHub</a>
+        </div>
       </div>
     </div>
   </section>
