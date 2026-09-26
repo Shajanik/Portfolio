@@ -78,25 +78,6 @@
   .hero{padding:64px 0 40px;}
   .hero-top{display:flex;gap:28px;align-items:stretch;flex-wrap:wrap;}
   .hero-top .terminal{flex:1 1 420px;margin:0;}
-  .profile-frame{
-    flex:0 0 auto;width:172px;
-    background:var(--term-bg);border:2px solid var(--line);border-radius:var(--radius);
-    box-shadow:var(--shadow);padding:10px;display:flex;flex-direction:column;align-items:center;gap:8px;
-  }
-  .profile-frame img{
-    width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:9px;
-    border:1px solid rgba(200,255,92,0.3);display:block;
-  }
-  .profile-frame .cam-label{
-    font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#9FCBB3;
-    display:flex;align-items:center;gap:5px;
-  }
-  .cam-dot{width:6px;height:6px;border-radius:50%;background:var(--coral);animation:pulse 1.6s infinite;}
-  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
-  @media (max-width:640px){
-    .hero-top{flex-direction:column-reverse;}
-    .profile-frame{width:140px;align-self:flex-start;}
-  }
   .terminal{
     background:var(--term-bg);
     border-radius:var(--radius);
@@ -297,9 +278,6 @@
         <p class="term-line"><span class="prompt">shajani@dev</span> ~ % whoami</p>
         <p class="term-line term-out" id="typewriter"></p>
         <p class="term-line term-comment"># final-year IT student · building backend systems that don't fall over</p>
-      </div>
-      <div class="profile-frame">
-        <img src="photo.png" alt="Shajani K">
       </div>
     </div>
 
